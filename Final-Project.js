@@ -1,1 +1,129 @@
 //Once all the code has been put together, the final code 
+//Welcome to my phone app
+
+//==================On Screen Home======================//
+
+//============ Clock Time =============//
+//=========== Starts Here =============//
+// Counters for the clock (Time)
+var seconds;
+var minutes;
+var hours;
+
+
+// Can be edited with manual modification,
+// by setting this variable
+// inorder to stop the timed increment
+var stop = 0;
+
+// Sets the current time
+clears();
+
+// Displays the clock time
+updates();
+
+
+// @ each time interval of 1000 milliseconds,
+// Increase the time by 1 second
+timedLoop(1000, function() {
+  // If conditional: stop is > 0, it means the count
+  // The time is live and continues to increases the clock time
+  if (stop==0) {
+    increase();
+  } else {
+     // If conditional: stop is > 0, it means the count
+     // time "count" is temporarily deactivated for stop seconds
+     // decrements stop, when stop it reaches zero then it allows time to continue again
+    stop--;
+  }
+});
+
+
+// Increase the time by 1 second
+// Update display clock
+function increase() {
+  seconds++;
+  if(seconds>59) {
+    // If conditional: exceeds 59 seconds, increase amount of minutes
+    seconds=0;
+    minutes++;
+    if(minutes>59) {
+      // If conditional: exceeds 59 minutes, increase amount of hours
+      minutes=0;
+      hours++;
+      if(hours>23) {
+        // If conditional: exceeds 23 hours, reset hours
+        hours=0;
+      }
+    }
+  }
+  updates();
+}
+
+// Decreasing time by 1 second
+// Update display clock
+function decreases() {
+  seconds--;
+  if (seconds<0) {
+    // If conditional: if seconds becomes negative,
+    // Decrease the amount of minutes
+    seconds = 59;
+    minutes--;
+    if (minutes<0) {
+      // If Conditional: if minutes becomes negative,
+      // Decrease the amount of hours
+      minutes = 59;
+      hours--;
+      if (hours<0) {
+        // If conditional: if hours becomes negative
+        // Reset again to 23:59:59
+        hours = 23;
+      }
+    }
+  }
+  updates();
+}
+
+// Updating the display with current time
+function updates() {
+  
+  // Setting the color on the label
+  if(stop>0) {
+    setProperty("clock","text-color","gray");
+  } else {
+    setProperty("clock","text-color","black");
+  }
+  
+  // Write to label in the format hours: minutes: seconds
+  setText("clock", format(hours) + 
+                    ":" + 
+                    format(minutes) + 
+                    ":" + 
+                    format(seconds) 
+  );
+}
+
+
+// Setting the current time
+function clears() {
+  var currentdate = new Date(); 
+  seconds = currentdate.getSeconds();
+  minutes = currentdate.getMinutes();
+  hours = currentdate.getHours();
+  updates();
+}
+
+// Formating the number "n" by adding before needed a zero
+function format(n) {
+  if(n<10) {
+    return "0"+String(n);
+  } else {
+    return String(n);
+  }
+  
+}
+//============ Clock Time =============//
+//============ Ends Here ==============//
+
+
+//==================On Screen Home======================//
