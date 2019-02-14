@@ -1,6 +1,21 @@
 //Welcome to my phone app
 
 //==================On Screen Home======================//
+//=============Apps Selection==========//
+onEvent("anime_label_APP", "click", function(event) {
+  setScreen("welcomeScreen");
+  console.log("anime_label_APP clicked!");
+});
+onEvent("anime_APP", "click", function(event) {
+  setScreen("welcomeScreen");
+  console.log("anime_label_APP clicked!");
+});
+onEvent("homeButton", "click", return2Home);
+
+function return2Home(){
+  setScreen("|=AppSelection=|");
+}
+//==========End of Apps Selection======//
 
 //============ Clock Time =============//
 //=========== Starts Here =============//
