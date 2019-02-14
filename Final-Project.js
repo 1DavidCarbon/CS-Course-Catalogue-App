@@ -431,7 +431,7 @@ function updateColor(){
 }
 //takes user to and from turtle screen
 onEvent("turtle", "click", function(){
-  setScreen("turtledrawing");
+  setScreen("turtle_game_APP");
   show();
   moveTo(160,240);
   penRGB(255,255,255,1);
@@ -441,12 +441,12 @@ onEvent("turtle", "click", function(){
 });
 
 onEvent("colorAdjust", "click", function(){
-  setScreen("RGBadj");
+  setScreen("rgb_APP");
   hide();
 });
 
 onEvent("colorNew","click", function(){
-  setScreen("turtledrawing");
+  setScreen("turtle_game_APP");
   show();
 });
 
@@ -488,11 +488,11 @@ onEvent("arrowRight","click",function(){
  });
 //returns to home screen
 onEvent("home1","click",function(){
-  setScreen("home_screen");
+  setScreen("|=AppSelection=|");
 });
 
 onEvent("home2", "click",function(){
-  setScreen("home_screen");
+  setScreen("|=AppSelection=|");
 });
 
 //resets the turtle drawing
