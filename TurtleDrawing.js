@@ -1,4 +1,7 @@
-//=====================This is the code for the turtle control section================================\\
+//==================On Screen Home======================//
+
+
+// This is the code for the turtle control section
 function updateColor(){
   var r = getNumber("red");
   var g = getNumber("green");
@@ -11,6 +14,11 @@ function updateColor(){
 onEvent("turtle", "click", function(){
   setScreen("turtledrawing");
   show();
+  moveTo(160,240);
+  penRGB(255,255,255,1);
+  dot(1000);
+  updateColor();
+  turnTo(0);
 });
 
 onEvent("colorAdjust", "click", function(){
@@ -70,10 +78,15 @@ onEvent("home2", "click",function(){
 
 //resets the turtle drawing
 onEvent("erase","click",function(){
+ ERASE();
+});
+
+function ERASE(){
   moveTo(160,240);
   penRGB(255,255,255,1);
   dot(1000);
- updateColor();
- turnTo(0);
-});
+  updateColor();
+  turnTo(0);
+}
+//===========================end of turtle code===============================\\
 //===========================end of turtle code===============================\\
