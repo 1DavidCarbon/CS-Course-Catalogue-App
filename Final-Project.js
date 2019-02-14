@@ -436,6 +436,7 @@ onEvent("turtle", "click", function(){
   moveTo(160,240);
   penRGB(255,255,255,1);
   dot(1000);
+  ERASE();
   updateColor();
   turnTo(0);
 });
