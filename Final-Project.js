@@ -47,6 +47,8 @@ onEvent("homeButton", "click", return2Home);
 onEvent("homeTurtleButton", "click", return2Home);
 onEvent("NavigationBarAnimeIcon", "click", return2Home);
 onEvent("NavigationBarAnimeIcon2", "click", return2Home);
+onEvent("homeButton2", "click", return2Home);
+onEvent("homeButton3", "click", return2Home);
 
 //CALL BACK FUNCTIONS
 function return2Home(){
