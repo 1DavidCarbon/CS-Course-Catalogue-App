@@ -16,6 +16,7 @@ onEvent("anime_APP", "click", function(event) {
 //TURTLE GAME SELECTION
 onEvent("turtle_APP", "click", function(event) {
   setScreen("turtle_game_APP");
+  ERASE();
   console.log("turtle_game_APP clicked!");
 });
 onEvent("turtle_label_APP", "click", function(event) {
@@ -436,7 +437,6 @@ onEvent("turtle", "click", function(){
   moveTo(160,240);
   penRGB(255,255,255,1);
   dot(1000);
-  ERASE();
   updateColor();
   turnTo(0);
 });
