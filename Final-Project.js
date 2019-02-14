@@ -43,6 +43,16 @@ onEvent("color_Sleuth_label_APP", "click", function(event) {
   console.log("welcomeScreen_Color_APP clicked!");
 });
 
+//MAD LIB SELECTION
+onEvent("mad_lib_APP", "click", function(event) {
+  setScreen("madlibInput_APP");
+  console.log("madlibInput_APP clicked!");
+});
+onEvent("mad_lib_label_APP", "click", function(event) {
+  setScreen("madlibInput_APP");
+  console.log("madlibInput_APP clicked!");
+});
+
 //RETURN TO APP SCREEN
 onEvent("homeButton", "click", return2Home);
 onEvent("homeTurtleButton", "click", return2Home);
@@ -50,6 +60,7 @@ onEvent("NavigationBarAnimeIcon", "click", return2Home);
 onEvent("NavigationBarAnimeIcon2", "click", return2Home);
 onEvent("homeButton2", "click", return2Home);
 onEvent("homeButton3", "click", return2Home);
+onEvent("homeButton4", "click", return2Home);
 
 //CALL BACK FUNCTIONS
 function return2Home(){
@@ -658,3 +669,39 @@ onEvent("button4", "click", function(){
 });
 //With barely 1 hour of sleep I declare this project compelte :yay: 
 //==================END Color Sleuth APP======================//
+
+//==================Mad Lib APP======================//
+var verb;
+var song;
+var verb2;
+var noun;
+var adj;
+//Reset APP
+var verbR = "";
+var songR = "";
+var verb2R = "";
+var nounR = "";
+var adjR = "";
+var madliptextR = (((("Waking up in the morning can be a difficult task!\n 1. Make sure to wake up on time and "+verbR)+" everyday!\n 2. While in the shower, put on some ")+songR+"and make sure to "+verb2R+".\n 3. Eat two ")+nounR+" and quickly make your way out.\n 4. Make your way to ")+adjR+" school/work!";
+
+onEvent("nextButton", "click", function(){
+setScreen("madlipScreen_APP");
+var verb = getText("verbInput");
+var song = getText("songInput");
+var verb2 = getText("verbInput2");
+var noun = getText("nounInput");
+var adj = getText("adjInput");
+var madliptext = (((("Waking up in the morning can be a difficult task!\n 1. Make sure to wake up on time and "+verb)+" everyday!\n 2. While in the shower, put on some ")+song+"and make sure to "+verb2+".\n 3. Eat two ")+noun+" and quickly make your way out.\n 4. Make your way to ")+adj+" school/work!";
+setText("madlip", madliptext);
+});
+onEvent("backButton", "click", playMadAgain);
+function playMadAgain(){
+  setText("verbInput", verbR);
+  setText("songInput", songR);
+  setText("verbInput2", verb2R);
+  setText("nounInput", nounR);
+  setText("adjInput", adjR);
+  setText("madlip", madliptextR);
+  setScreen("madlibInput_APP");
+}
+//==================END Mad Lib APP======================//
