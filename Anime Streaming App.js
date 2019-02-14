@@ -1,3 +1,4 @@
+//==================Anime Heaven APP======================//
 //What a Sad Day
 //Now onwards to doing Calulus Homework away!
 //If I can't submit this than I will RAGE
@@ -101,12 +102,12 @@ onEvent("iHomeScreen", "click", function(event) {
 //Home Page Video Buttons that leads to a 404 Page
 onEvent("page_black_clover_w", "mouseup", function(event) {
   setScreen("404-W");
-  playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/404/Snap.mp3",false);
+  //playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/404/Snap.mp3",false);
   console.log("Loading 404!");
 });
 onEvent("page_black_clover_d", "mouseup", function(event) {
   setScreen("404");
-  playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/404/Snap.mp3",false);
+  //playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/404/Snap.mp3",false);
   console.log("Loading 404!");
 });
 //Returns After 404
@@ -128,46 +129,46 @@ onEvent("pet", "click", function(event) {
 //Title Screen of Game
 onEvent("home_button_e2", "click", function(event) {
   setScreen("EasterEgg");
-  playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/easter-egg-game/Main-Menu.mp3", false);
-  stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/easter-egg-game/Pet-Game.mp3", false);
+  //playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/easter-egg-game/Main-Menu.mp3", false);
+  //stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/easter-egg-game/Pet-Game.mp3", false);
   console.log("I'm Back to 1985!");
 });
 //Return to main pafe "saddness"
 onEvent("home_button_e1", "click", function(event) {
   setScreen("homeScreenWhite");
-  stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/easter-egg-game/Main-Menu.mp3", false);
+  //stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/easter-egg-game/Main-Menu.mp3", false);
   console.log("Back to the Time Machine!");
 });
 //Lets to clicker game begin! Que the epic music!!
 onEvent("easter_egg_button", "click", function(event) {
   setScreen("EasterEgg2");
-  stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/easter-egg-game/Main-Menu.mp3", false);
-  playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/easter-egg-game/Pet-Game.mp3", false);
+  //stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/easter-egg-game/Main-Menu.mp3", false);
+  //playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/easter-egg-game/Pet-Game.mp3", false);
   console.log("Oh Snap!!");
 });
 //Returns to Easter Egg Main Menu
 onEvent("Easter_Egg_Page", "click", function(event) {
   setScreen("EasterEgg");
-  stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/easter-egg-game/Pet-Game.mp3", false);
-  playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/easter-egg-game/Main-Menu.mp3", false);
+  //stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/easter-egg-game/Pet-Game.mp3", false);
+  //playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/easter-egg-game/Main-Menu.mp3", false);
   console.log("This is too much 4 me!");
 });
 //Scrapped Search Box :( Limited on Data Base Code
 onEvent("text_area_search", "change", function(event) {
   setScreen("homeScreen");
-  playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/search-box/nicememewebsite.mp3", false);
+  //playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/search-box/nicememewebsite.mp3", false);
   console.log("text_area_search entered text: " + getText("text_area_search"));
 });
 onEvent("text_area_search_2", "change", function(event) {
   setScreen("homeScreen");
-  playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/search-box/nicememewebsite.mp3", false);
+  //playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/search-box/nicememewebsite.mp3", false);
   console.log("text_area_search entered text: " + getText("text_area_search"));
 });
 //Another Easter Egg WOW! Except its one the main page, LoL
 onEvent("Easter_Egg_Page_2", "click", function(event) {
   setScreen("search_box");
-  playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/search-box/Eye-Catcher.mp3", false);
-  playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/search-box/nice-meme-website.mp3", false);
+  //playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/search-box/Eye-Catcher.mp3", false);
+  //playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/search-box/nice-meme-website.mp3", false);
   console.log("Wait...What?");
 });
 //Scrapped Search Box :()
@@ -200,3 +201,5 @@ onEvent("checkbox2", "change", function(event) {
 //Maybe adding live data charts or something :)
 //Oh the site does exit on your screen check it out below.
 //(UPDATE)I forgot I have made the repository private :cri:
+
+//==================END Anime Heaven APP======================//
