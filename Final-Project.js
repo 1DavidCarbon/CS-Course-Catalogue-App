@@ -1,4 +1,5 @@
 // https://studio.code.org/projects/applab/fBtxMbaTvfVUV1oQ70RQYP2Xkp6QYMaepMuTw0P2S9k
+
 //Welcome to my phone app
 
 //==================On Screen Home======================//
@@ -53,6 +54,26 @@ onEvent("mad_lib_label_APP", "click", function(event) {
   console.log("madlibInput_APP clicked!");
 });
 
+//MAD LIB SELECTION
+onEvent("binary_APP", "click", function(event) {
+  setScreen("MinecraftHomeScreen_APP");
+  console.log("MinecraftHomeScreen_APP clicked!");
+});
+onEvent("binary_label_APP", "click", function(event) {
+  setScreen("MinecraftHomeScreen_APP");
+  console.log("MinecraftHomeScreen_APP clicked!");
+});
+
+//MAD LIB SELECTION
+onEvent("info_APP", "click", function(event) {
+  setScreen("infoMainScreen");
+  console.log("infoMainScreen clicked!");
+});
+onEvent("info_label_APP", "click", function(event) {
+  setScreen("infoMainScreen");
+  console.log("infoMainScreen clicked!");
+});
+
 //RETURN TO APP SCREEN
 onEvent("homeButton", "click", return2Home);
 onEvent("homeTurtleButton", "click", return2Home);
@@ -61,12 +82,12 @@ onEvent("NavigationBarAnimeIcon2", "click", return2Home);
 onEvent("homeButton2", "click", return2Home);
 onEvent("homeButton3", "click", return2Home);
 onEvent("homeButton4", "click", return2Home);
+onEvent("homeButton5", "click", return2Home);
 
 //CALL BACK FUNCTIONS
 function return2Home(){
   setScreen("|=AppSelection=|");
 }
-
 
 //==========End of Apps Selection======//
 
@@ -705,3 +726,80 @@ function playMadAgain(){
   setScreen("madlibInput_APP");
 }
 //==================END Mad Lib APP======================//
+
+//==================Binarry APP======================//
+var onezero = 0;
+onEvent("MinecraftStart2", "click", function() {
+  setScreen("screen2");
+});
+onEvent("MinecraftStart1","click", function() {
+  setScreen("MinecraftGameScreen_APP");
+});
+
+onEvent("MinecraftButtonOnOff", "click", function() {
+
+  if (onezero== 0) {
+    showElement("MinecraftLighton");
+    hideElement("MinecraftLightOff");
+    onezero=1;
+  } else {
+    hideElement("MinecraftLighton");
+    showElement("MinecraftLightOff");
+    onezero=0;
+  }
+});
+
+onEvent("Minecraftnextpage", "click", function() {
+  setScreen("MinecraftHomeScreen_APP");
+});
+//==================END Binarry APP======================//
+
+//==================About This Class APP======================//
+//info screen
+onEvent("creditButton", "click", function() {
+  setScreen("infoCreditScreen");
+});
+onEvent("infoButton1", "click", function() {
+  setScreen("infoScreen1");
+});
+onEvent("infoButton2", "click", function() {
+  setScreen("infoScreen2");
+});
+onEvent("infoButton3", "click", function() {
+  setScreen("infoScreen3");
+});
+onEvent("infoButton4", "click", function() {
+  setScreen("infoScreen4");
+});
+onEvent("infoButton5", "click", function() {
+  setScreen("infoScreen5");
+});
+onEvent("infoButton6", "click", function() {
+  setScreen("infoScreen6");
+});
+onEvent("infoScreen1Back", "click", function() {
+  setScreen("infoMainScreen");
+});
+onEvent("infoScreen2Back", "click", function() {
+  setScreen("infoMainScreen");
+});
+onEvent("backInfoButton", "click", function() {
+  setScreen("|=AppSelection=|");
+});
+onEvent("infoScreen3Back", "click", function() {
+  setScreen("infoMainScreen");
+});
+onEvent("infoScreen4Back", "click", function() {
+  setScreen("infoMainScreen");
+});
+onEvent("infoScreen5Back", "click", function() {
+  setScreen("infoMainScreen");
+});
+onEvent("infoScreen6Back", "click", function() {
+  setScreen("infoMainScreen");
+});
+onEvent("creditBackButton", "click", function() {
+  setScreen("infoMainScreen");
+});
+//info screen
+//==================END About This Class APP======================//
