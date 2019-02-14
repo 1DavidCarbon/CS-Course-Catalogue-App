@@ -4,89 +4,89 @@
 //Video Page
 onEvent("pageSlimeDattaKen", "click", function(event) {
   setScreen("iSlimeDattaKen");
-  playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iSlimeDattaKen/We-Took-Each-Others-Hand.mp3", false);
+  //playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iSlimeDattaKen/We-Took-Each-Others-Hand.mp3", false);
   console.log("Loading Slime Datta Ken from Dark Theme!");
 });
 onEvent("pageSlimeDattaKen_2", "click", function(event) {
   setScreen("iSlimeDattaKen-W");
-  playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iSlimeDattaKen/We-Took-Each-Others-Hand.mp3", false);
+  //playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iSlimeDattaKen/We-Took-Each-Others-Hand.mp3", false);
   console.log("Loading Slime Datta Ken from Light Theme!");
 });
 //Home Button
 onEvent("iSlimeDattaKen-Button", "click", function(event) {
-  stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iSlimeDattaKen/We-Took-Each-Others-Hand.mp3", false);
+  //stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iSlimeDattaKen/We-Took-Each-Others-Hand.mp3", false);
   setScreen("homeScreenWhite");
   console.log("Returning to Home Light Theme!");
 });
 onEvent("iSlimeDattaKen-Button-W", "click", function(event) {
-  stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iSlimeDattaKen/We-Took-Each-Others-Hand.mp3", false);
+  //stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iSlimeDattaKen/We-Took-Each-Others-Hand.mp3", false);
   setScreen("homeScreen");
   console.log("Returning to Home Dark Theme!");
 });
 //Video Page
 onEvent("pageKodomowoUndekure", "click", function(event) {
   setScreen("iKodomowoUndekure");
-  playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iKodomowoUndekure/Watashi-Tachi-wa-Koko-ni-Imasu-Friend-Shitai-Gekichuu-BGM.mp3", false);
+  //playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iKodomowoUndekure/Watashi-Tachi-wa-Koko-ni-Imasu-Friend-Shitai-Gekichuu-BGM.mp3", false);
   console.log("Loading Kodomo wo Undekure from Dark Theme!");
 });
 onEvent("pageKodomowoUndekure_2", "click", function(event) {
   setScreen("iKodomowoUndekure-W");
-  playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iKodomowoUndekure/Watashi-Tachi-wa-Koko-ni-Imasu-Friend-Shitai-Gekichuu-BGM.mp3", false);
+  //playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iKodomowoUndekure/Watashi-Tachi-wa-Koko-ni-Imasu-Friend-Shitai-Gekichuu-BGM.mp3", false);
   console.log("Loading Kodomo wo Undekure from Light Theme!");
 });
 //Home Button
 onEvent("iKodomowoUndekure-Button", "click", function(event) {
   setScreen("homeScreen");
-  stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iKodomowoUndekure/Watashi-Tachi-wa-Koko-ni-Imasu-Friend-Shitai-Gekichuu-BGM.mp3", false);
+  //stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iKodomowoUndekure/Watashi-Tachi-wa-Koko-ni-Imasu-Friend-Shitai-Gekichuu-BGM.mp3", false);
   console.log("Returning to Home Light Theme!");
 });
 onEvent("iKodomowoUndekure-Button-W", "click", function(event) {
   setScreen("homeScreenWhite");
-  stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iKodomowoUndekure/Watashi-Tachi-wa-Koko-ni-Imasu-Friend-Shitai-Gekichuu-BGM.mp3", false);
+  //stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iKodomowoUndekure/Watashi-Tachi-wa-Koko-ni-Imasu-Friend-Shitai-Gekichuu-BGM.mp3", false);
   console.log("Returning to Home Light Theme!");
 });
 //Video Page
 onEvent("pageTokyoGhoul", "click", function(event) {
-setScreen("iTokyoGhoul");
-playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iTokyoGhoul/To-light.mp3", false);
-console.log("Loading Tokyo Ghoul from Dark Theme!");
+  setScreen("iTokyoGhoul");
+  //playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iTokyoGhoul/To-light.mp3", false);
+  console.log("Loading Tokyo Ghoul from Dark Theme!");
 });
 onEvent("pageTokyoGhoul_2", "click", function(event) {
-setScreen("iTokyoGhoul-W");
-playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iTokyoGhoul/To-light.mp3", false);
-console.log("Loading Tokyo Ghoul from Light Theme!");
+  setScreen("iTokyoGhoul-W");
+  //playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iTokyoGhoul/To-light.mp3", false);
+  console.log("Loading Tokyo Ghoul from Light Theme!");
 });
 //Home Button
 onEvent("iTokyoGhoul-Button", "click", function(event) {
   setScreen("homeScreen");
-  stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iTokyoGhoul/To-light.mp3", false);
+  //stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iTokyoGhoul/To-light.mp3", false);
   console.log("Returning to Home Dark Theme!");
 });
 onEvent("iTokyoGhoul-Button-W", "click", function(event) {
   setScreen("homeScreenWhite");
-  stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iTokyoGhoul/To-light.mp3", false);
+  //stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iTokyoGhoul/To-light.mp3", false);
   console.log("Returning to Home Light Theme!");
 });
 //Video Page
 onEvent("pageJingai-san", "click", function(event) {
   setScreen("iJingai-san-W");
-  playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iJingai-san/Wonder-Carte.mp3", false);
+  //playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iJingai-san/Wonder-Carte.mp3", false);
   console.log("Loading Jingai-san from Dark Theme!");
 });
 onEvent("pageJingai-san_2", "click", function(event) {
   setScreen("iJingai-san");
-  playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iJingai-san/Wonder-Carte.mp3", false);
+  //playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iJingai-san/Wonder-Carte.mp3", false);
   console.log("Loading Jingai-san from Light Theme!");
 });
 //Home Button
 onEvent("iJingai-san-Button", "click", function(event) {
   setScreen("homeScreenWhite");
-  stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iJingai-san/Wonder-Carte.mp3", false);
+  //stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iJingai-san/Wonder-Carte.mp3", false);
   console.log("Returning to Home Light Theme!");
 });
 onEvent("iJingai-san-Button-W", "click", function(event) {
   setScreen("homeScreen");
-  stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iJingai-san/Wonder-Carte.mp3", false);
+  //stopSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/video-pages/iJingai-san/Wonder-Carte.mp3", false);
   console.log("Returning to Home Dark Theme!");
 });
 //Different Home Page Visuals
@@ -181,15 +181,15 @@ onEvent("submit_button", "click", function(event) {
   console.log("Did you collect my information?!");
 });
 //Welcome Screen
-playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/alert/announcer_alert.mp3", false);
+  //playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/alert/announcer_alert.mp3", false);
 //Check Boxes With Sounds
 onEvent("checkbox", "change", function(event) {
-  playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/alert/medic_yes.mp3", false);
+  //playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/alert/medic_yes.mp3", false);
   showElement("submit_button");
   console.log("checkbox checked? " + getChecked("checkbox"));
 });
 onEvent("checkbox2", "change", function(event) {
-  playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/alert/engineer_boo.mp3", false);
+  //playSound("https://davidcarbon.ml/my-Projects/code-org/Lesson-3-Building-an-App-Multi-Screen-App/alert/engineer_boo.mp3", false);
   showElement("submit_button");
   console.log("checkbox checked? " + getChecked("checkbox"));
 });
