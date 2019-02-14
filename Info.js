@@ -1,3 +1,4 @@
+//info screen
 onEvent("creditButton", "click", function() {
   setScreen("infoCreditScreen");
 });
@@ -43,3 +44,4 @@ onEvent("infoScreen6Back", "click", function() {
 onEvent("creditBackButton", "click", function() {
   setScreen("infoMainScreen");
 });
+//info screen
