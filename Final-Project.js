@@ -34,12 +34,12 @@ onEvent("clicker_game_label_APP", "click", function(event) {
 
 //COLOR SLEUTH SELECTION
 onEvent("color_Sleuth_APP", "click", function(event) {
-  setScreen("welcomeScreen_Color_Sleuth_APP");
-  console.log("welcomeScreen_Color_Sleuth_APP clicked!");
+  setScreen("welcomeScreen_Color_APP");
+  console.log("welcomeScreen_Color_APP clicked!");
 });
 onEvent("color_Sleuth_label_APP", "click", function(event) {
-  setScreen("welcomeScreen_Color_Sleuth_APP");
-  console.log("welcomeScreen_Color_Sleuth_APP clicked!");
+  setScreen("welcomeScreen_Color_APP");
+  console.log("welcomeScreen_Color_APP clicked!");
 });
 
 //RETURN TO APP SCREEN
@@ -545,8 +545,8 @@ var currentPlayer = 1;
 var p1Score = 0;
 var p2Score = 0;
 //Starts The Game and Excutes Functions
-onEvent("start_btn", "click", function(){
-  setScreen("gamePlay_screen");
+onEvent("welcomeScreen_start_Color_APP", "click", function(){
+  setScreen("gamePlay_screen_Color_APP");
   setBoard();
 });
 //Simlair to the code above except its from a function
@@ -554,16 +554,16 @@ onEvent("replay_btn", "click", playAgain);
 //Checks a player has a certain amount of points to determine a win or lose display
 function checkGameover(){
   if ((p1Score >= 16)) {
-    setScreen("gameOver_screen");
+    setScreen("gameOver_screen_Color_APP");
     showElement("player1Win_label");
   } else if ((p1Score <= -16)) {
-      setScreen("gameOver_screen");
+      setScreen("gameOver_screen_Color_APP");
       showElement("player2Win_label");
   } else if ((p2Score >= 16)) {
-    setScreen("gameOver_screen");
+    setScreen("gameOver_screen_Color_APP");
     showElement("player2Win_label");
   } else if ((p2Score <= -16)) {
-      setScreen("gameOver_screen");
+      setScreen("gameOver_screen_Color_APP");
       showElement("player1Win_label");
   }
 }
@@ -579,7 +579,7 @@ function playAgain(){
   hideElement("player1Win_label");
   setText("score1_label", p1Score);
   setText("score2_label", p2Score);
-  setScreen("gamePlay_screen");
+  setScreen("gamePlay_screen_Color_APP");
 }
 //Updates the player score
 function updateScoreBy(amt){
