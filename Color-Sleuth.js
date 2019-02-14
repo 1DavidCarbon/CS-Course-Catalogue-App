@@ -38,7 +38,7 @@ function playAgain(){
   hideElement("player2Win_label");
   hideElement("player1Win_label");
   setText("score1_label", p1Score);
-  setText("score1_label", p1Score);
+  setText("score2_label", p2Score);
   setScreen("gamePlay_screen");
 }
 //Updates the player score
