@@ -1,5 +1,4 @@
 // https://studio.code.org/projects/applab/fBtxMbaTvfVUV1oQ70RQYP2Xkp6QYMaepMuTw0P2S9k
-
 //Welcome to my phone app
 
 //==================On Screen Home======================//
@@ -420,6 +419,8 @@ onEvent("checkbox2", "change", function(event) {
 //==================END Anime Heaven APP======================//
 
 //=====================Turtle Code================================\\
+
+// This is the code for the turtle control section
 function updateColor(){
   var r = getNumber("red");
   var g = getNumber("green");
@@ -430,17 +431,22 @@ function updateColor(){
 }
 //takes user to and from turtle screen
 onEvent("turtle", "click", function(){
-  setScreen("turtle_game_APP");
+  setScreen("turtledrawing");
   show();
+  moveTo(160,240);
+  penRGB(255,255,255,1);
+  dot(1000);
+  updateColor();
+  turnTo(0);
 });
 
 onEvent("colorAdjust", "click", function(){
-  setScreen("rgb_APP");
+  setScreen("RGBadj");
   hide();
 });
 
 onEvent("colorNew","click", function(){
-  setScreen("turtle_game_APP");
+  setScreen("turtledrawing");
   show();
 });
 
@@ -482,21 +488,25 @@ onEvent("arrowRight","click",function(){
  });
 //returns to home screen
 onEvent("home1","click",function(){
-  setScreen("|=AppSelection=|");
+  setScreen("home_screen");
 });
 
 onEvent("home2", "click",function(){
-  setScreen("|=AppSelection=|");
+  setScreen("home_screen");
 });
 
 //resets the turtle drawing
 onEvent("erase","click",function(){
+ ERASE();
+});
+
+function ERASE(){
   moveTo(160,240);
   penRGB(255,255,255,1);
   dot(1000);
- updateColor();
- turnTo(0);
-});
+  updateColor();
+  turnTo(0);
+}
 //===========================END of Turtle Code===============================\\
 
 //==================Aliens Catcher APP======================//
